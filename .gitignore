@@ -2,15 +2,10 @@
 **/c_cpp_properties.json
 **/launch.json
 **/ipch
+**/.gitignore
 **.VSCodeCounter
 .vscode
 .sql
-
-# Editor swap files, build output, local databases, personal Claude Code settings
-*.swp
-**/bin/
-*.db
-**/.claude/settings.local.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -25,7 +20,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-# lib/ is deliberately NOT ignored: PlatformIO projects keep their local library overrides there
+lib/
+lib64/
 parts/
 sdist/
 var/
@@ -159,6 +155,8 @@ cython_debug/
 *.dat
 *.log
 *.xml
+*.yaml
+*.yml
 
 # Operating System Files
 .DS_Store
@@ -194,6 +192,8 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+src/Controller - Pi/db/BajaCloud.db
 
 
 
